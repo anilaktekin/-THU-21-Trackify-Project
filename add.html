@@ -17,11 +17,45 @@
         <div>
             <h1>Yeni İnceleme Ekle</h1>
 
-            <form action="#" method="post"></form>
+            <form action="#" method="post">
                 <div>
                     <label for="baslik">İnceleme Başlığı:</label>
                     <input type="text" id="baslik" name="baslik" placeholder="İnceleme Başlığını Giriniz">
                 </div>
+                <div>
+                    <label for="kategori">Kategori:</label>
+                    <select id="kategori" name="kategori">
+                        <option value="1">Kitap</option>
+                        <option value="2">Film</option>
+                        <option value="3">Dizi</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="yazar">Yazar / Yönetmen :</label>
+                    <input type="text" id="yazar" name="yazar" placeholder="Yazar / Yönetmeni Giriniz">
+                </div>
+                <div>
+                    <label for="puan">Puanın:</label>
+                    <select id="puan" name="puan">
+                        <option value="1">⭐ </option>
+                        <option value="2">⭐⭐ </option>
+                        <option value="3">⭐⭐⭐ </option>
+                        <option value="4">⭐⭐⭐⭐ </option>
+                        <option value="5">⭐⭐⭐⭐⭐ </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="yorum">Yorumun:</label>
+                    <textarea id="yorum" name="yorum" rows="4" placeholder="İncelemeyi Giriniz"></textarea>
+                </div>
+                <div>
+                    <label for="gorsel">Görsel:</label>
+                    <input type="file" id="gorsel" name="gorsel" accept="image/*">
+                </div>
+
+                <button type="submit">İnceleme Ekle</button>
+            </form>
+
         </div>
     </main>
 </body>
